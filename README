@@ -1,0 +1,36 @@
+Agda code accompanying PhD thesis: Cubical Models of
+Homotopy Type Theory -- An Internal Approach" by Ian Orton.
+
+This dataset was finalised in November 2018 by Ian Orton,
+who was a PhD student at the University of Cambridge the
+time. He may be contacted at ianorton@hotmail.com.
+
+This dataset consists of numerous computerised proofs which
+can be checked with the proof assistant Agda. The file
+`root.agda` describes how these proofs are structured and
+what is contained in each file. The structure of the files
+is designed to match the structure of the PhD thesis.
+
+These files were put together by Ian Orton, but build on
+work done in collaboration with Andrew Pitts, Daniel Licata
+and Bas Spitters.
+
+The files which are imported by `chapter7.agda` require an
+(at the time of writing) experimental branch of Agda known
+as Agda-flat which can be installed using the following
+commands:
+
+git clone https://github.com/agda/agda
+cd agda
+git checkout flat
+cabal update
+cabal install --program-suffix=-flat
+
+The file `root.agda` has been checked using the following
+versions of Agda, with the approximate times taken to check
+the entire file:
+  - Agda 2.5.4 (with chapter7 commented out) in ~ 1 min
+  - Agda-flat 2.6.0-1f943c9 (the whole file) in ~ 3 mins
+
+This data is released under the CC BY licence and everyone
+is free to use, share and modify it.
